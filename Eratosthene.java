@@ -13,13 +13,14 @@ public class Eratosthene{
     for(min=min;min<=max;min++){ //adds numbers from min to max to arraylist primes in ascending order
       primes.add(min);
     }
-    int first;
     for(int o=0;o<primes.size();o++){
-    first = primes.get(o);
-    for(int z=o+1;z<primes.size();z++){ //iterates through arraylist primes and removes any non-prime numbers
+    int first = primes.get(o); int z = 0;
+    while(z<primes.size()){ //iterates through arraylist primes and removes any non-prime numbers
       if(!isPrime(primes.get(z), first)){
         primes.remove(z);
-        z--; //negates z++ in loop because reasons
+      }
+      else{
+        z++;
       }
     }
     //System.out.println(primes); //print statement prints out current arrayList primes. Used to check progress
