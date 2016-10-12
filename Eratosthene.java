@@ -17,7 +17,7 @@ public class Eratosthene{
       if(!isPrime(primes.get(z))){
         System.out.println(primes.get(z));
         primes.remove(z);
-        z--; //negates z++ in loop 
+        z--; //negates z++ in loop because reasons
       }
     }
     System.out.print(primes);
