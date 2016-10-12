@@ -1,0 +1,1 @@
+This program uses Eratosthene's Sieve method to calculate primes.
